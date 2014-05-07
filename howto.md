@@ -32,3 +32,5 @@ Alias /wag-devops-vagrant /Users/ej/Dropbox/NCAR/wag-devops-vagrant/
 ```
 
 makes the presentation available @ http://localhost/wag-devops-vagrant
+
+presenter mode: 'S'
