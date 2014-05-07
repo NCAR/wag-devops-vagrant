@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# find slides/ -name "*.md" -exec sh -c "ack SLIDE {} | wc -l|tr -d '\n'" \; -exec echo " {}" \;|sort -n
+
+TOTAL=0
+
+for f in slides/*.md; do
+  # echo $f
+  COUNT=`ack SLIDE $f |wc -l`
+  let COUNT=COUNT+1
+  let TOTAL=TOTAL+COUNT
+  echo "$COUNT $f"
+done
+
+# FILECOUNT=`find slides -iname "*.md" | wc -l`
+
+# # echo $FILECOUNT
+
+DELIMITERCOUNT=`ack SLIDE slides/*.md | wc -l`
+
+# # echo $DELIMITERCOUNT
+
+echo slides: $TOTAL
+
+echo estimated time: `echo $TOTAL*0.75 |bc -l` minutes
