@@ -42,7 +42,7 @@ https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins#providers
 
 # Vagrant @ EOL
 
-- soon to be one month old
+- soon to be one month old <img src='img/cake-48.png' alt='cake!' />
 - currently Mike and Erik
 - soon other Catalog Developers
 - and then other EOL teams, per interest
