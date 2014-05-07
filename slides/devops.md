@@ -18,7 +18,22 @@
 
 !SLIDE
 
-# DevOps
+# DevOps: Benefits
+
+> - Continuous software delivery
+- Less complex problems to fix
+- Faster resolution of problems
+- Faster delivery of features
+- More stable operating environments
+- More time available to add value (rather than fix/maintain)
+
+\- http://newrelic.com/devops/benefits-of-devops
+
+!NOTE
+Smoother workflow.
+
+Equal, strong deployment confidence for Developers and Administrators
+
 
 
 <!-- more of what it can do than what it is: benefits, etc. -->
