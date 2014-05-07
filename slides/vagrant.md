@@ -33,7 +33,8 @@
 - Docker*
 - ...
 https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins#providers
-- * Third-Party Plugins
+
+\* *via third-party plugins*
 
 <!-- easy for developers to deploy to operational environments -->
 
