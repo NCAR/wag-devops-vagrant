@@ -116,7 +116,10 @@ https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins#providers
 
 !SLIDE
 
-# Vagrant @ EOL: Future
+# Vagrant @ EOL
+
+## Future
 
 - automate box creation in future w/ `packer.io` and Kickstart file(s)
 - propagate usage to other Catalog Developers and other EOL teams, per interest
+- use Vagrant for orchestration of Development and Operational environments
