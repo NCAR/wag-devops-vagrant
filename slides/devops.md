@@ -34,8 +34,6 @@ Smoother workflow.
 
 Equal, strong deployment confidence for Developers and Administrators
 
-
-
 <!-- more of what it can do than what it is: benefits, etc. -->
 
 !SLIDE
@@ -43,6 +41,11 @@ Equal, strong deployment confidence for Developers and Administrators
 # DevOps Tools
 
 - Version-Control Systems (Git, Subversion, *etc.*)
-- Provisioners (Puppet, Chef, Salt Ansible, Shell scripts (*ad hoc*))
+- Provisioners (Puppet, Chef, Salt Ansible, shell scripts (*ad hoc*))
+- Continuous Integration
 - Virtualization
 - Vagrant
+
+!NOTE
+
+CI: frequently integration developers' work and running integration tests via automation
