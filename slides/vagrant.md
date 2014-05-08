@@ -1,6 +1,6 @@
 # ...Vagrant!
 
-- things that it handles: IP, SSH, portability, etc.
+- handles: IP, SSH, portability, port-forwarding, file sharing
 - provisioner hooks
    - shell
    - Puppet
@@ -12,12 +12,40 @@
 
 # Vagrant Workflow
 
+## Box Creation
+
 - create VM
+  - in **VirtualBox** or other provider's GUI
+- configure VM for **Vagrant**
+  - install Guest Additions
+  - add `vagrant` user w/ `sudo` privilege
 - package
-- box add
-- up
+
+  `$ vagrant package --output awesome.box awesome-vm`
 
 <!-- TODO: example commands, optional demo if there's time / interest -->
+
+!NOTE
+this is done infrequently
+
+!SLIDE
+
+# Vagrant Workflow
+
+## Box Usage
+
+- box add
+
+  `$ vagrant box add --name awesome-box awesome.box`
+
+- up
+
+  `$ vagrant up`
+
+<!-- TODO: example commands, optional demo if there's time / interest -->
+
+!NOTE
+this is done frequently
 
 !SLIDE
 
@@ -71,16 +99,18 @@ https://github.com/mitchellh/vagrant/wiki/Available-Vagrant-Plugins#providers
 
 !SLIDE
 
-# Vagrant @ EOL: Lessons Learned
+# Vagrant @ EOL
+
+## Lessons Learned
 
 - very handy, easy to use
 - initial box creation can be laborious
 - document actions for others
-- script / use provisioners everything you can for automation and others
+- script / use provisioners everything for you can for automation, documentation and use by others
+- highlights pain points in deployment workflow
 - compression of virtual drive files
   - zero out empty space
   - compress w/ virtualization tool, e.g. `VBoxManage modifyhd --compress`
-- highlights pain points in deployment workflow
 
 <!-- TODO: try to clean this up -->
 
